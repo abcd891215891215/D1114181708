@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 霓虹 2048 修正版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">2048</div>
+        <div class="score-box">SCORE<br><span id="score">0</span></div>
+    </div>
+
+    <div id="game-board" tabindex="0"></div>
+
+    <div class="controls-pad">
+        <button class="arrow-btn" onclick="handleButtonClick('U')">↑</button>
+        <div class="middle-row">
+            <button class="arrow-btn" onclick="handleButtonClick('L')">←</button>
+            <button class="arrow-btn" onclick="handleButtonClick('D')">↓</button>
+            <button class="arrow-btn" onclick="handleButtonClick('R')">→</button>
+        </div>
+    </div>
+
+    <div class="footer-btns">
+        <button id="reset-btn">重新開始遊戲</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
